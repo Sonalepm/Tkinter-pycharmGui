@@ -69,4 +69,11 @@ submenu5.add_separator()
 submenu5.add_command(label="Analyze Code", command=lambda: dropdown(msg[27]))
 submenu5.add_command(label="Analyze stack trace", command=lambda: dropdown(msg[28]))
 
+toolbar=Frame(root,bg='light green')
+button1=Button(toolbar,text="OK")
+toolbar.pack(side=TOP,fill=X)
+button1.pack(side=RIGHT,padx=5,pady=5)
+
+statusbar=Label(root,bg='light yellow',text="Status Bar",bd=5,anchor=W)
+statusbar.pack(side=BOTTOM)
 root.mainloop()
